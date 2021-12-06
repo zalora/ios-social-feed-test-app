@@ -1,0 +1,19 @@
+PODS:
+  - GetSocial/Core (7.6.5)
+  - GetSocial/UI (7.6.5):
+    - GetSocial/Core
+
+DEPENDENCIES:
+  - GetSocial/Core
+  - GetSocial/UI
+
+SPEC REPOS:
+  trunk:
+    - GetSocial
+
+SPEC CHECKSUMS:
+  GetSocial: 66a8ee372ebdbeb0e7ce9558cd1faecf811bbc4e
+
+PODFILE CHECKSUM: 6169bd27b961f646d2a8a63083a5c8ca79f0d756
+
+COCOAPODS: 1.11.2
