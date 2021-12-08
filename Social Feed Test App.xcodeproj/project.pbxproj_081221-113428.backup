@@ -31,14 +31,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 9246CBCE2758ACDE00218BC1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9246CBD52758ACDE00218BC1 /* Social Feed Test App */;
+			remoteGlobalIDString = 9246CBD52758ACDE00218BC1;
 			remoteInfo = "Social Feed Test App";
 		};
 		9246CBF82758ACE000218BC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9246CBCE2758ACDE00218BC1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9246CBD52758ACDE00218BC1 /* Social Feed Test App */;
+			remoteGlobalIDString = 9246CBD52758ACDE00218BC1;
 			remoteInfo = "Social Feed Test App";
 		};
 /* End PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		07D2C2461A93B8B932D28A37 /* Pods-Social Feed Test App-Social Feed Test AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed Test App-Social Feed Test AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Social Feed Test App-Social Feed Test AppUITests/Pods-Social Feed Test App-Social Feed Test AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0BA0391B4D7E76EDBD48E476 /* Pods-Social Feed Test AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed Test AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Social Feed Test AppTests/Pods-Social Feed Test AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		32094EF0A6F7EED527ADBD35 /* getsocial.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = getsocial.json; path = getsocial.json; sourceTree = SOURCE_ROOT; };
+		32094EF0A6F7EED527ADBD35 /* getsocial.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getsocial.json; sourceTree = SOURCE_ROOT; };
 		5D243B25DCB08A7C3A183198 /* Pods-Social Feed Test AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed Test AppTests.release.xcconfig"; path = "Target Support Files/Pods-Social Feed Test AppTests/Pods-Social Feed Test AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		687FDCC0593E6876660C6A86 /* Pods_Social_Feed_Test_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Feed_Test_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9246CBD62758ACDE00218BC1 /* Social Feed Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Feed Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +68,7 @@
 		CC47E9E8C7C4F4176A92ADCD /* Pods_Social_Feed_Test_App_Social_Feed_Test_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_Feed_Test_App_Social_Feed_Test_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C8A3B4D240FF45FCA465B /* Pods-Social Feed Test App-Social Feed Test AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed Test App-Social Feed Test AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Social Feed Test App-Social Feed Test AppUITests/Pods-Social Feed Test App-Social Feed Test AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B805CB6C1B225A9BB7586D /* Pods-Social Feed Test App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Feed Test App.debug.xcconfig"; path = "Target Support Files/Pods-Social Feed Test App/Pods-Social Feed Test App.debug.xcconfig"; sourceTree = "<group>"; };
-		F1564EECAB66C3751D54EC52 /* Social Feed Test App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = None; name = "Social Feed Test App.entitlements"; path = "Social Feed Test App.entitlements"; sourceTree = SOURCE_ROOT; };
+		F1564EECAB66C3751D54EC52 /* Social Feed Test App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = None; path = "Social Feed Test App.entitlements"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9246CC002758ACE000218BC1 /* Build configuration list for PBXNativeTarget "Social Feed Test App" */;
 			buildPhases = (
-				82AFB9C767C223BC2BA7D65A /* ShellScript */,
-				92206A7B275DB77B0013DFEA /* ShellScript */,
+				82AFB9C767C223BC2BA7D65A /* [CP] Check Pods Manifest.lock */,
+				92206A7B275DB77B0013DFEA /* Run Script */,
 				9246CBD22758ACDE00218BC1 /* Sources */,
 				9246CBD32758ACDE00218BC1 /* Frameworks */,
 				9246CBD42758ACDE00218BC1 /* Resources */,
-				89948372CB9A68E9707A1AA7 /* ShellScript */,
+				89948372CB9A68E9707A1AA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,7 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9246CC032758ACE000218BC1 /* Build configuration list for PBXNativeTarget "Social Feed Test AppTests" */;
 			buildPhases = (
-				C8A47903AE162E599AAB0552 /* ShellScript */,
+				C8A47903AE162E599AAB0552 /* [CP] Check Pods Manifest.lock */,
 				9246CBE82758ACE000218BC1 /* Sources */,
 				9246CBE92758ACE000218BC1 /* Frameworks */,
 				9246CBEA2758ACE000218BC1 /* Resources */,
@@ -224,11 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9246CC062758ACE000218BC1 /* Build configuration list for PBXNativeTarget "Social Feed Test AppUITests" */;
 			buildPhases = (
-				CD9562230BB4739699DC1853 /* ShellScript */,
+				CD9562230BB4739699DC1853 /* [CP] Check Pods Manifest.lock */,
 				9246CBF32758ACE000218BC1 /* Sources */,
 				9246CBF42758ACE000218BC1 /* Frameworks */,
 				9246CBF52758ACE000218BC1 /* Resources */,
-				0B5D696D02D50497CE3B4173 /* ShellScript */,
+				0B5D696D02D50497CE3B4173 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,7 +316,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B5D696D02D50497CE3B4173 /* ShellScript */ = {
+		0B5D696D02D50497CE3B4173 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,7 +333,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Social Feed Test App-Social Feed Test AppUITests/Pods-Social Feed Test App-Social Feed Test AppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82AFB9C767C223BC2BA7D65A /* ShellScript */ = {
+		82AFB9C767C223BC2BA7D65A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,10 +352,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode \'outputs\' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		89948372CB9A68E9707A1AA7 /* ShellScript */ = {
+		89948372CB9A68E9707A1AA7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +372,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Social Feed Test App/Pods-Social Feed Test App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92206A7B275DB77B0013DFEA /* ShellScript */ = {
+		92206A7B275DB77B0013DFEA /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,7 +390,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PROJECT_DIR/getsocial-sdk7.sh\" --app-id=\"6o9segOFA08\"\n";
 		};
-		C8A47903AE162E599AAB0552 /* ShellScript */ = {
+		C8A47903AE162E599AAB0552 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,10 +409,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode \'outputs\' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD9562230BB4739699DC1853 /* ShellScript */ = {
+		CD9562230BB4739699DC1853 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode \'outputs\' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
