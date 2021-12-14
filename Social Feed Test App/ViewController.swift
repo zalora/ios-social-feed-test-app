@@ -8,8 +8,6 @@
 import UIKit
 import GetSocialUI
 import GetSocialSDK
-import AppCenter
-import AppCenterCrashes
 
 class ViewController: UIViewController {
     
@@ -21,13 +19,19 @@ class ViewController: UIViewController {
         inviteFriendsButton.isEnabled = false
         return inviteFriendsButton
     }()
+    
+    lazy var crashButton: UIButton = {
+        let crashButton = UIButton()
+        crashButton.setTitle("Make it crash!", for: .normal)
+        crashButton.setTitleColor(.systemBlue, for: .normal)
+        crashButton.addTarget(self, action: #selector(crashButtonTapped), for: .touchUpInside)
+        crashButton.isEnabled = false
+        return crashButton
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppCenter.start(withAppSecret: "c46053fc-bffa-4d70-baca-f4c992cedd84", services:[
-            Analytics.self,
-            Crashes.self
-        ])
+        
         // Do any additional setup after loading the view.
 //        setupGetSocialUI()
 //        setupGetSocialWithoutUI()
@@ -37,11 +41,16 @@ class ViewController: UIViewController {
     }
     
     private func setupView() {
-        view.addSubview(inviteFriendsButton)
-        inviteFriendsButton.translatesAutoresizingMaskIntoConstraints = false
+        [inviteFriendsButton, crashButton].forEach {
+            view.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
         NSLayoutConstraint.activate([
             inviteFriendsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            inviteFriendsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            inviteFriendsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            crashButton.topAnchor.constraint(equalTo: inviteFriendsButton.bottomAnchor),
+            crashButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
     }
     
@@ -50,6 +59,7 @@ class ViewController: UIViewController {
             print("GetSocial is ready to be used")
             self.retrieveReferralDataIfAny()
             self.inviteFriendsButton.isEnabled = GetSocial.isInitialized()
+            self.crashButton.isEnabled = GetSocial.isInitialized()
 //            self.setupGetSocialUI()
 //            self.setupGetSocialWithoutUI()
 ////            self.setupGetSocialWithoutUI(onChannel: InviteChannelIds.facebook)
@@ -100,6 +110,10 @@ class ViewController: UIViewController {
             print("Failed to send invitation via \(channel) failed, error: \(error)")
         })
         
+    }
+    
+    @objc private func crashButtonTapped() {
+        fatalError("crashButtonTapped")
     }
 }
 

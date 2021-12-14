@@ -7,7 +7,6 @@
 
 import UIKit
 import GetSocialSDK
-
 import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
@@ -18,12 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AppCenter.configure(withAppSecret: "c46053fc-bffa-4d70-baca-f4c992cedd84")
-        
-        if AppCenter.isConfigured {
-            AppCenter.startService(Analytics.self)
-            AppCenter.startService(Crashes.self)
-        }
+        AppCenter.start(withAppSecret: "c46053fc-bffa-4d70-baca-f4c992cedd84", services: [
+            AppCenterAnalytics.Analytics.self,
+            AppCenterCrashes.Crashes.self
+        ])
         
         return true
     }
