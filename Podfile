@@ -8,6 +8,13 @@ target 'Social Feed Test App' do
   # Pods for Social Feed Test App
   pod "GetSocial/Core"
   pod "GetSocial/UI" # add this pod only if you plan to use GetSocial UI
+  # Use the following line to use App Center Analytics and Crashes.x
+  pod 'AppCenter'
+
+  # Use the following lines if you want to specify which service you want to use.
+  pod 'AppCenter/Analytics'
+  pod 'AppCenter/Crashes'
+  pod 'AppCenter/Distribute'
 
 
   target 'Social Feed Test AppTests' do

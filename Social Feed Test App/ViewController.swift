@@ -8,6 +8,8 @@
 import UIKit
 import GetSocialUI
 import GetSocialSDK
+import AppCenter
+import AppCenterCrashes
 
 class ViewController: UIViewController {
     
@@ -22,6 +24,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppCenter.start(withAppSecret: "c46053fc-bffa-4d70-baca-f4c992cedd84", services:[
+            Analytics.self,
+            Crashes.self
+        ])
         // Do any additional setup after loading the view.
 //        setupGetSocialUI()
 //        setupGetSocialWithoutUI()
